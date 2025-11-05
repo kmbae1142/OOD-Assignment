@@ -42,7 +42,7 @@ test: test.o node.o int_node.o string_node.o tree_util.o gtest_main.a
 
 #TODO: Change 'main' and 'main_test' to your executable and test respectively
 clean:
-	 rm -f gtest.a gtest_main.a *.o hw6 test
+	 rm -f gtest.a gtest_main.a *.o hw7 test
 
 tidy:
 	clang-tidy $(SOURCES) $(HEADERS) $(TIDYFLAGS) --fix -- -x c++ -std=c++17

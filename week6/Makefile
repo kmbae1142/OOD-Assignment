@@ -9,7 +9,7 @@ GTEST_HEADERS = $(GTEST_DIR)/include/gtest/*.h \
 				$(GTEST_DIR)/include/gtest/internal/*.h
 
 GTEST_SRCS_ = $(GTEST_DIR)/src/*.cc $(GTEST_DIR)/src/*.h $(GTEST_HEADERS)
-SOURCES := $(shell find . -name "*.cc" ! -name "test.cc")
+SOURCES := $(shell find . -name "*.cc" ! -name "test.cc" ! -name "hw6.cc")
 HEADERS := $(shell find . -name "*.h")
 
 #TODO: Set your executable target
