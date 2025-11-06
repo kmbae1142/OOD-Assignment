@@ -1,7 +1,7 @@
 #ifndef _PART_H_
 #define _PART_H_
 
-#include <iostream>
+#include <string>
 
 class Part {
     public:

@@ -1,7 +1,7 @@
 #ifndef _CAR_H_
 #define _CAR_H_
 
-#include <iostream>
+#include <string>
 #include "part.h"
 
 class CarBuilder;
