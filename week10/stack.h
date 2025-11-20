@@ -26,7 +26,7 @@ class Stack : private Vector<T> {
         }
 
         T Pop() {
-            int pop_num = Vector<T>::operator[](static_cast<int>(Vector<T>::size()) - 1);
+            T pop_num = Vector<T>::operator[](static_cast<int>(Vector<T>::size()) - 1);
             Vector<T>::PopBack();
             return pop_num;
         }

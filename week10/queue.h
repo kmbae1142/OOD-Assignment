@@ -15,7 +15,7 @@ class Queue : private List<T> {
         }
 
         std::size_t size() const {
-            return List<T>::size;
+            return List<T>::size();
         }
 
         void Add(T elem) {
@@ -23,7 +23,7 @@ class Queue : private List<T> {
         }
 
         T Poll() {
-            int pop_num = List<T>::At(0);
+            T pop_num = List<T>::At(0);
             List<T>::PopFront();
             return pop_num;
         }

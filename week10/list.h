@@ -24,6 +24,8 @@ class List {
         }
 
         void operator=(const List& list) {
+            if (this == &list) { return; }
+
             Elem* cur_node = this->head;
 
             while (cur_node != nullptr) {

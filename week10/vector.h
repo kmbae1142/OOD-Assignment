@@ -18,9 +18,11 @@ class Vector {
         }
 
         void operator=(const Vector& vector) {
+            if (this == &vector) { return; }
             delete[] this->elements_;
             this->elements_ = new T[vector.capacity_];
             this->size_ = vector.size_;
+            this->capacity_ = vector.capacity_;
             for (int i = 0; i < this->size_; i++) {
                 this->elements_[i] = vector.elements_[i];
             }
