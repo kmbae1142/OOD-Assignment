@@ -164,7 +164,7 @@ TEST_F(ArraySortTest, ArraySortTest4) {
     EXPECT_EQ(result, "1");
 }
 
-TEST_F(ArraySortTest, VectorSortTest1) {
+TEST_F(VectorSortTest, VectorSortTest1) {
     std::vector<int> arr = {1, 4, 6, 3, 2, 8, 5, 9, 7};
     std::string result1 = SortResultToStr<std::vector<int>, IntIncreasingOrder>(&arr);
     arr = {1, 4, 6, 3, 2, 8, 5, 9, 7};
@@ -174,7 +174,7 @@ TEST_F(ArraySortTest, VectorSortTest1) {
     EXPECT_EQ(result2, "9 8 7 6 5 4 3 2 1");
 }
 
-TEST_F(ArraySortTest, VectorSortTest2) {
+TEST_F(VectorSortTest, VectorSortTest2) {
     std::vector<float> arr = {8.1, 6.5, 7.9, 8.0, 5.4, 1.1, 3.4, 2.6, 4.4};
     std::string result1 = SortResultToStr<std::vector<float>, FloatIncreasingOrder>(&arr);
     arr = {8.1, 6.5, 7.9, 8.0, 5.4, 1.1, 3.4, 2.6, 4.4};
@@ -184,7 +184,7 @@ TEST_F(ArraySortTest, VectorSortTest2) {
     EXPECT_EQ(result2, "8.100000 8.000000 7.900000 6.500000 5.400000 4.400000 3.400000 2.600000 1.100000");
 }
 
-TEST_F(ArraySortTest, VectorSortTest3) {
+TEST_F(VectorSortTest, VectorSortTest3) {
     std::vector<std::string> arr = {"ab", "ababa", "caa", "bcb", "baa"};
     std::string result1 = SortResult<std::vector<std::string>, StringIncreasingOrder>(&arr);
     arr = {"ab", "ababa", "caa", "bcb", "baa"};
@@ -194,14 +194,14 @@ TEST_F(ArraySortTest, VectorSortTest3) {
     EXPECT_EQ(result2, "caa bcb baa ababa ab");
 }
 
-TEST_F(ArraySortTest, VectorSortTest4) {
+TEST_F(VectorSortTest, VectorSortTest4) {
     std::vector<int> arr = {1};
     std::string result1 = SortResultToStr<std::vector<int>, IntIncreasingOrder>(&arr);
     
     EXPECT_EQ(result1, "1");
 }
 
-TEST_F(ArraySortTest, ListSortTest1) {
+TEST_F(ListSortTest, ListSortTest1) {
     std::list<int> arr = {1, 4, 6, 3, 2, 8, 5, 9, 7};
     std::string result1 = SortResultToStr<std::list<int>, IntIncreasingOrder>(&arr);
     arr = {1, 4, 6, 3, 2, 8, 5, 9, 7};
@@ -211,7 +211,7 @@ TEST_F(ArraySortTest, ListSortTest1) {
     EXPECT_EQ(result2, "9 8 7 6 5 4 3 2 1");
 }
 
-TEST_F(ArraySortTest, ListSortTest2) {
+TEST_F(ListSortTest, ListSortTest2) {
     std::list<float> arr = {8.1, 6.5, 7.9, 8.0, 5.4, 1.1, 3.4, 2.6, 4.4};
     std::string result1 = SortResultToStr<std::list<float>, FloatIncreasingOrder>(&arr);
     arr = {8.1, 6.5, 7.9, 8.0, 5.4, 1.1, 3.4, 2.6, 4.4};
@@ -221,7 +221,7 @@ TEST_F(ArraySortTest, ListSortTest2) {
     EXPECT_EQ(result2, "8.100000 8.000000 7.900000 6.500000 5.400000 4.400000 3.400000 2.600000 1.100000");
 }
 
-TEST_F(ArraySortTest, ListSortTest3) {
+TEST_F(ListSortTest, ListSortTest3) {
     std::list<std::string> arr = {"ab", "ababa", "caa", "bcb", "baa"};
     std::string result1 = SortResult<std::list<std::string>, StringIncreasingOrder>(&arr);
     arr = {"ab", "ababa", "caa", "bcb", "baa"};
@@ -231,14 +231,14 @@ TEST_F(ArraySortTest, ListSortTest3) {
     EXPECT_EQ(result2, "caa bcb baa ababa ab");
 }
 
-TEST_F(ArraySortTest, ListSortTest4) {
+TEST_F(ListSortTest, ListSortTest4) {
     std::list<int> arr = {1};
     std::string result1 = SortResultToStr<std::list<int>, IntIncreasingOrder>(&arr);
     
     EXPECT_EQ(result1, "1");
 }
 
-TEST_F(ArraySortTest, DequeSortTest1) {
+TEST_F(DequeSortTest, DequeSortTest1) {
     std::deque<int> arr = {1, 4, 6, 3, 2, 8, 5, 9, 7};
     std::string result1 = SortResultToStr<std::deque<int>, IntIncreasingOrder>(&arr);
     arr = {1, 4, 6, 3, 2, 8, 5, 9, 7};
@@ -248,7 +248,7 @@ TEST_F(ArraySortTest, DequeSortTest1) {
     EXPECT_EQ(result2, "9 8 7 6 5 4 3 2 1");
 }
 
-TEST_F(ArraySortTest, DequeSortTest2) {
+TEST_F(DequeSortTest, DequeSortTest2) {
     std::deque<float> arr = {8.1, 6.5, 7.9, 8.0, 5.4, 1.1, 3.4, 2.6, 4.4};
     std::string result1 = SortResultToStr<std::deque<float>, FloatIncreasingOrder>(&arr);
     arr = {8.1, 6.5, 7.9, 8.0, 5.4, 1.1, 3.4, 2.6, 4.4};
@@ -258,7 +258,7 @@ TEST_F(ArraySortTest, DequeSortTest2) {
     EXPECT_EQ(result2, "8.100000 8.000000 7.900000 6.500000 5.400000 4.400000 3.400000 2.600000 1.100000");
 }
 
-TEST_F(ArraySortTest, DequeSortTest3) {
+TEST_F(DequeSortTest, DequeSortTest3) {
     std::deque<std::string> arr = {"ab", "ababa", "caa", "bcb", "baa"};
     std::string result1 = SortResult<std::deque<std::string>, StringIncreasingOrder>(&arr);
     arr = {"ab", "ababa", "caa", "bcb", "baa"};
@@ -268,7 +268,7 @@ TEST_F(ArraySortTest, DequeSortTest3) {
     EXPECT_EQ(result2, "caa bcb baa ababa ab");
 }
 
-TEST_F(ArraySortTest, DequeSortTest4) {
+TEST_F(DequeSortTest, DequeSortTest4) {
     std::deque<int> arr = {1};
     std::string result1 = SortResultToStr<std::deque<int>, IntIncreasingOrder>(&arr);
     
